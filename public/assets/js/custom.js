@@ -26,7 +26,7 @@ Assigned to: Template Monster
             this.preLoader();
             // this.searchBar();
             this.wowAnimation();
-            this.navMenu();
+            // this.navMenu();
             this.focusText();
             // this.testimonialSlider();
             this.TeamSlider();

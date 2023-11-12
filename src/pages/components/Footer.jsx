@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link'
+import information from '../../../information.json'
 
 const Footer = () => {
     return (
@@ -8,7 +10,12 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
                             <div className="agy-widgets">
-                                <img src="assets/images/white-logo.png" alt="agency" />
+                                {/* <img src="assets/images/white-logo.png" alt="agency" /> */}
+                                <Link href={"/"}>
+                                    <div className="agy-page-title-text">
+                                        <h1 style={{ color: "white" }}>Dhyey Rathod</h1>
+                                    </div>
+                                </Link>
                                 <p>Consectetur adipisicing seeid doersi eiusmod tempoerer incididunt ut labore et dolore magereina aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                                 <div className="agy-address-wrap">
                                     <h4>Our Conference Center</h4>
@@ -18,7 +25,7 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="row">
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-12 mb-30">
+                                {/* <div className="col-lg-6 col-md-6 col-sm-6 col-12 mb-30">
                                     <div className="agy-widgets agy-footer-menu">
                                         <h4 className="agy-sub-heading relative">Support</h4>
                                         <ul>
@@ -29,16 +36,16 @@ const Footer = () => {
                                             <li><a href="#">Commodity</a></li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-12 mb-30">
                                     <div className="agy-widgets agy-footer-menu">
                                         <h4 className="agy-sub-heading relative">Links</h4>
                                         <ul>
-                                            <li><a href="#">About Refubsy</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Get In Touch</a></li>
-                                            <li><a href="#">Our Clients</a></li>
-                                            <li><a href="#">Download Broucher</a></li>
+                                            <li><Link href="/aboutus">About</Link></li>
+                                            <li><Link href="/services">Service</Link></li>
+                                            <li><Link href="/contactus">Contact</Link></li>
+                                            {/* <li><a href="#">Our Clients</a></li> */}
+                                            {/* <li><a href="#">Download Broucher</a></li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -53,7 +60,7 @@ const Footer = () => {
                                     <li>Sunday : Day Off (Holiday)</li>
                                 </ul>
                                 <h6>Call Now -</h6>
-                                <h5>+(61) 1800-125-124</h5>
+                                <h5>+(91) {information.contact}</h5>
                             </div>
                         </div>
                     </div>
@@ -61,7 +68,7 @@ const Footer = () => {
             </div>
             <div className="agy-copyright-wrapper">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                    <p>Copyright © 2022 <a href="#;">Business Agency</a>. All Right Reserved.</p>
+                    <p>Copyright © 2022 <a href="#;">Dhyey Rathod</a>. All Right Reserved.</p>
                 </div>
             </div>
         </footer>

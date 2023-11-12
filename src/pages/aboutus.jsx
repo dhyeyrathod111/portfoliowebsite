@@ -1,53 +1,30 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import Header from './components/Header'
+import Head from "next/head";
 import Breadcrumb from './components/Breadcrumb'
-import Whyweare from './components/Whyweare'
 import Footer from './components/Footer'
-const aboutus = () => {
+import { AppContext } from '../controller/context'
+const aboutus = ({ information }) => {
+    const datacontext = useContext(AppContext);
     useEffect(() => {
-        var testimonialSlider = new Swiper('.agy-testimonial-slider .swiper', {
-            autoHeight: false,
-            autoplay: false,
-            loop: false,
-            spaceBetween: 0,
-            centeredSlides: false,
-            speed: 1500,
-            pagination: {
-                el: '.agy-testimonial-slider .agy-bullets',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.agy-testimonial-slider .swiper-button-next',
-                prevEl: '.agy-testimonial-slider .swiper-button-prev',
-            },
-            slidesPerView: 3,
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                },
-                575: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                767: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                1200: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
-        });
-
+        datacontext.menuClose()
     }, [])
     return (
         <>
+            <Head>
+                <title>About Us - Website Developer in Mumbai | Dhyey Rathod</title>
+                <meta name="description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India. My expertise include web development, mobile app development, ecommerce, SEO and digital marketing." />
+                <meta name="apple-mobile-web-app-title" content="Website Developer and Designer in Mumbai | Dhyey Rathod" />
+                <meta property="og:url" content={information.base_url + "/aboutus/"} />
+                <meta property="og:site_name" content="Dhyey Rathod" />
+                <meta property="article:publisher" content="https://www.facebook.com/dhyey.rathod.98" />
+
+                <meta property="og:image" content={information.base_url + "/assets/images/dhyey.png"} />
+                <meta property="og:title" content="About Us - Website Developer in Mumbai | Dhyey Rathod" />
+                <meta property="og:description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India. My expertise include web development, mobile app development, ecommerce, SEO and digital marketing." />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+            </Head>
             <Header />
             <Breadcrumb page={"About Us"} />
             <section className="agy-about-wrapper agy-about-home" id="about">
@@ -71,7 +48,7 @@ const aboutus = () => {
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="agy-about-img relative">
-                                <img src="assets/images/agency-about-img.png" alt="agency" />
+                                <img src={information.base_url + "assets/images/agency-about-img.jpg"} alt="dhyey Rathod" />
                             </div>
                         </div>
                     </div>
@@ -83,28 +60,28 @@ const aboutus = () => {
                     <div className="row counter-holder">
                         <div className="col-lg-3 col-md-3 col-sm-6 col-12" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s' }}>
                             <div className="counter-item text-center">
-                                <div className="agy-counter-icon"><img src="assets/images/svg/011-rating.svg" /></div>
+                                <div className="agy-counter-icon"><img alt='' src={information.base_url + "assets/images/svg/011-rating.svg"} /></div>
                                 <h1><span className="count-no" data-count={26}>26</span><span>k+</span></h1>
                                 <p>Happy Customers</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-6 col-12" data-wow-delay="0.2s" style={{ visibility: 'visible', animationDelay: '0.2s' }}>
                             <div className="counter-item text-center">
-                                <div className="agy-counter-icon"><img src="assets/images/svg/012-start.svg" /></div>
+                                <div className="agy-counter-icon"><img src={information.base_url + "assets/images/svg/012-start.svg"} /></div>
                                 <h1><span className="count-no" data-count={700}>700</span><span>+</span></h1>
                                 <p>Project Complete</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-6 col-12" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s' }}>
                             <div className="counter-item text-center">
-                                <div className="agy-counter-icon"><img src="assets/images/svg/013-appartment.svg" /></div>
+                                <div className="agy-counter-icon"><img src={information.base_url + "assets/images/svg/013-appartment.svg"} /></div>
                                 <h1><span className="count-no" data-count={200}>200</span><span>+</span></h1>
                                 <p>World Wide Branch</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-6 col-12" data-wow-delay="0.4s" style={{ visibility: 'visible', animationDelay: '0.4s' }}>
                             <div className="counter-item text-center">
-                                <div className="agy-counter-icon"><img src="assets/images/svg/014-medal.svg" /></div>
+                                <div className="agy-counter-icon"><img src={information.base_url + "assets/images/svg/014-medal.svg"} /></div>
                                 <h1><span className="count-no" data-count={6}>6</span><span>k+</span></h1>
                                 <p>Award Winner</p>
                             </div>
