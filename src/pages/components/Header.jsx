@@ -79,7 +79,6 @@ const Header = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-3 col-md-4 col-sm-4 col-4">
                             <div className="agy-logo">
-                                {/* <Link href={"/"}><img src={information.base_url + "assets/images/logo.png"} alt="logo" /></Link> */}
                                 <Link href={"/"}>
                                     <div className="agy-page-title-text">
                                         <h1 style={{ color: "white" }}>Dhyey Rathod</h1>

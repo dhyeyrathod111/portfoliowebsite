@@ -2,7 +2,6 @@ import '@/styles/globals.css'
 import information from '../../information.json';
 import { AppProvider } from '../controller/context'
 import Head from 'next/head'
-import Script from 'next/script'
 
 
 export default function App({ Component, pageProps }) {
