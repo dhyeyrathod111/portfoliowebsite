@@ -24,6 +24,7 @@ const aboutus = ({ information }) => {
                 <meta property="og:description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India. My expertise include web development, mobile app development, ecommerce, SEO and digital marketing." />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
+                <link rel="canonical" href={information.base_url+"aboutus/"} />
             </Head>
             <Header />
             <Breadcrumb page={"About Us"} />
@@ -37,6 +38,8 @@ const aboutus = ({ information }) => {
                                 <p>Dhyey Rathod is a profoundly experienced and proficient organization for Corporate Website Development, Software Development, and Digital Marketing.</p>
                                 <div className="agy-divider" />
                                 <p>Being in the IT business for over 5 years now Dhyey Rathod has a strong team of skilled and experienced IT experts.</p>
+                                <div className="agy-divider" />
+                                <p>Dhyey Rathod has long been known for providing top-notch, cutting-edge software development and digital marketing solutions. I take great satisfaction in being the top software development firm in the business right now. I provide our clients from all across the business community a wide range of digital marketing and software services. Delivering the best services possible to our clients is our belief. Our greatest goal is to ensure that our clients achieve all of their marketing objectives. This explains why we are highly trusted by all of our clients, who come from all different backgrounds in the business world.</p>
                                 <ul className="agy-list-item">
                                     <li><a href="#"><span className="fa-solid fa-square-check" />On-time Delivery</a></li>
                                     <li><a href="#"><span className="fa-solid fa-square-check" />Growth Revenue</a></li>
@@ -48,7 +51,7 @@ const aboutus = ({ information }) => {
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="agy-about-img relative">
-                                <img src={information.base_url + "assets/images/agency-about-img.jpg"} alt="dhyey Rathod" />
+                                <img src={information.base_url + "assets/images/dhyey.png"} alt="dhyey Rathod" />
                             </div>
                         </div>
                     </div>

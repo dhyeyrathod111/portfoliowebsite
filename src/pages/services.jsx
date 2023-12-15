@@ -27,13 +27,12 @@ const services = props => {
                 <meta property="og:url" content={information.base_url + "/services/"} />
                 <meta property="og:site_name" content="Dhyey Rathod" />
                 <meta property="article:publisher" content="https://www.facebook.com/dhyey.rathod.98" />
-
                 <meta property="og:image" content={information.base_url + "assets/images/dhyey.png"} />
                 <meta property="og:title" content="Services - Website Developer in Mumbai | Dhyey Rathod" />
                 <meta property="og:description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India. My expertise include web development, mobile app development, ecommerce, SEO and digital marketing." />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
-
+                <link rel="canonical" href={information.base_url + "services/"} />
             </Head>
             <Header />
             <Breadcrumb page={"Services"} />

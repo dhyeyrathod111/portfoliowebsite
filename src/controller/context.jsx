@@ -7,16 +7,7 @@ const initialState = {
 }
 
 const AppProvider = ({ children }) => {
-
-    const fetchServicesApi = (data) => {
-        return dispatch({
-            type: "FETCHSERVICES",
-            payload: {
-                services: data
-            }
-        })
-    }
-
+    
     const menuClose = () => {
         return dispatch({
             type: "CLOSE",
@@ -34,7 +25,8 @@ const AppProvider = ({ children }) => {
         })
     }
     const [state, dispatch] = useReducer(reducer, initialState);
-    return <AppContext.Provider value={{ ...state, menuClose, openMenu, fetchServicesApi }}>
+
+    return <AppContext.Provider value={{ ...state, menuClose, openMenu }}>
         {children}
     </AppContext.Provider>
 }
