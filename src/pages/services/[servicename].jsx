@@ -8,6 +8,8 @@ import Breadcrumb from '../components/Breadcrumb';
 import information from '../../../information.json'
 import Link from 'next/link';
 
+export const config = { amp: true }
+
 export const getServerSideProps = async (context) => {
     const apidata = await fetch(information.base_url + '/api/serviceapi/' + context.params.servicename)
     const formateddata = await apidata.json();
@@ -31,7 +33,7 @@ const Servicedetails = props => {
                 <meta property="og:description" content={props.serviceresponse.short_description} />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
-                <link rel="canonical" href={information.base_url + "services/" + props.serviceresponse.url_slug} />
+                <link rel="canonical" href={information.base_url + "services/" + props.serviceresponse.url_slug + "/"} />
             </Head>
             <Header />
             <Breadcrumb page={props.serviceresponse.name} />
@@ -43,14 +45,18 @@ const Servicedetails = props => {
                                 <div className="agy-blog-img">
                                     <a href=""><img className='w-100' src={props.serviceresponse.imageurl} alt="Dhyey Rathod Software Developer IN mumbai" /></a>
                                 </div>
+
                                 <div className="agy-blog-info">
                                     <ul>
-                                        <li><img className="agy-user" src={information.base_url + "assets/images/dhyey.png"} alt="Dhyey Rathod Software Developer IN mumbai" /><span>Post By - </span><Link className="agy-user-name" href={"/"}>Dhyey Rathod</Link></li>
-                                        <li><a href=""><i className="fa fa-calendar" />{props.serviceresponse.created_at}</a></li>
+                                        <li><img className="agy-user" src={information.base_url + "assets/images/dhyey.webp"} alt="Dhyey Rathod" /><span>Post By -</span><a className="agy-user-name" href="javascript:void(0);">Dhyey Rathod</a></li>
+                                        <li><a href=""><i className="fa fa-calendar" />March 9, 2022</a></li>
+                                        <li><a href=""><i className="fa fa-comments-o" />0 Comments</a></li>
                                     </ul>
                                 </div>
+                                <a href="javascript:void(0);" className="agy-blog-heading text-center" style={{ width: "100%" }}>
+                                    {props.serviceresponse.name}
+                                </a>
                                 <div className="agy-blog-text">
-                                    <a href="" className="agy-blog-heading text-justify">{props.serviceresponse.name}</a>
                                     <div dangerouslySetInnerHTML={{ __html: props.serviceresponse.long_description }}></div>
                                 </div>
                             </div>

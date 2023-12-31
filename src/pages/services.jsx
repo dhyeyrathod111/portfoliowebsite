@@ -7,6 +7,8 @@ import Link from 'next/link';
 import information from '../../information.json'
 import Head from "next/head";
 
+export const config = { amp: true }
+
 export const getServerSideProps = async (context) => {
     const apidata = await fetch(information.base_url + '/api/hello/')
     const formateddata = await apidata.json();
@@ -27,7 +29,7 @@ const services = props => {
                 <meta property="og:url" content={information.base_url + "/services/"} />
                 <meta property="og:site_name" content="Dhyey Rathod" />
                 <meta property="article:publisher" content="https://www.facebook.com/dhyey.rathod.98" />
-                <meta property="og:image" content={information.base_url + "assets/images/dhyey.png"} />
+                <meta property="og:image" content={information.base_url + "assets/images/dhyey.webp"} />
                 <meta property="og:title" content="Services - Website Developer in Mumbai | Dhyey Rathod" />
                 <meta property="og:description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India. My expertise include web development, mobile app development, ecommerce, SEO and digital marketing." />
                 <meta property="og:image:width" content="1200" />

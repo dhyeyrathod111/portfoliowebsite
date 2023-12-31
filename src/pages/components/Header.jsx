@@ -50,25 +50,20 @@ const Header = () => {
                         <div className="header-socials">
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a target='_blank' href="https://www.facebook.com/dhyey.rathod.98/">
                                         <i className="fa-brands fa-facebook-f" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a target='_blank' href="https://www.instagram.com/prince.rathod111/">
                                         <i className="fa-brands fa-instagram" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i className="fa-brands fa-pinterest-p" />
+                                    <a target='_blank' href="https://www.linkedin.com/in/dhyey-rathod-8b1a0b1b2">
+                                        <i className="fa-brands fa-linkedin" />
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i className="fa-brands fa-dribbble" />
-                                    </a>
-                                </li>
+                                </li>   
                             </ul>
                         </div>
                     </div>

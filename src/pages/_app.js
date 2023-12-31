@@ -3,7 +3,6 @@ import information from '../../information.json';
 import { AppProvider } from '../controller/context'
 import Head from 'next/head'
 
-
 export default function App({ Component, pageProps }) {
 	return (
 		<AppProvider>

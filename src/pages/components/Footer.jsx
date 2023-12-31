@@ -17,10 +17,6 @@ const Footer = () => {
                                     </div>
                                 </Link>
                                 <p>Consectetur adipisicing seeid doersi eiusmod tempoerer incididunt ut labore et dolore magereina aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                <div className="agy-address-wrap">
-                                    <h4>Our Conference Center</h4>
-                                    <p>514 Academy thomes merry St. Algonquin Square, opp. IL 60102</p>
-                                </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -57,7 +53,6 @@ const Footer = () => {
                                 <ul>
                                     <li>Monday - Friday : 9:00 to 17:00</li>
                                     <li>Saturday : 10:00 to 15:00</li>
-                                    <li>Sunday : Day Off (Holiday)</li>
                                 </ul>
                                 <h6>Call Now -</h6>
                                 <h5>+(91) {information.contact}</h5>

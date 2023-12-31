@@ -8,6 +8,8 @@ import Link from 'next/link'
 import { AppContext } from '../controller/context'
 import information from '../../information.json'
 
+export const config = { amp: true }
+
 export const getServerSideProps = async (context) => {
 	const apidata = await fetch(information.base_url + '/api/hello/')
 	const formateddata = await apidata.json();

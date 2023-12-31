@@ -4,6 +4,9 @@ import Head from "next/head";
 import Breadcrumb from './components/Breadcrumb'
 import Footer from './components/Footer'
 import { AppContext } from '../controller/context'
+
+export const config = { amp: true }
+
 const aboutus = ({ information }) => {
     const datacontext = useContext(AppContext);
     useEffect(() => {
@@ -19,7 +22,7 @@ const aboutus = ({ information }) => {
                 <meta property="og:site_name" content="Dhyey Rathod" />
                 <meta property="article:publisher" content="https://www.facebook.com/dhyey.rathod.98" />
 
-                <meta property="og:image" content={information.base_url + "/assets/images/dhyey.png"} />
+                <meta property="og:image" content={information.base_url + "/assets/images/dhyey.webp"} />
                 <meta property="og:title" content="About Us - Website Developer in Mumbai | Dhyey Rathod" />
                 <meta property="og:description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India. My expertise include web development, mobile app development, ecommerce, SEO and digital marketing." />
                 <meta property="og:image:width" content="1200" />
@@ -51,7 +54,7 @@ const aboutus = ({ information }) => {
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="agy-about-img relative">
-                                <img src={information.base_url + "assets/images/dhyey.png"} alt="dhyey Rathod" />
+                                <img src={information.base_url + "assets/images/dhyey.webp"} alt="dhyey Rathod" />
                             </div>
                         </div>
                     </div>
