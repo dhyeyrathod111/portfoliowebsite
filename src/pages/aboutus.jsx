@@ -5,8 +5,6 @@ import Breadcrumb from './components/Breadcrumb'
 import Footer from './components/Footer'
 import { AppContext } from '../controller/context'
 
-export const config = { amp: true }
-
 const aboutus = ({ information }) => {
     const datacontext = useContext(AppContext);
     useEffect(() => {

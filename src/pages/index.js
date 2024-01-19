@@ -8,7 +8,6 @@ import Link from 'next/link'
 import { AppContext } from '../controller/context'
 import information from '../../information.json'
 
-export const config = { amp: true }
 
 export const getServerSideProps = async (context) => {
 	const apidata = await fetch(information.base_url + '/api/hello/')
@@ -26,10 +25,8 @@ export default function (props) {
 			<Head>
 				<title>Website Developer and Designer in Mumbai | Dhyey Rathod</title>
 				<meta name="description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India. My expertise include web development, mobile app development, ecommerce, SEO and digital marketing." />
-				<meta name="apple-mobile-web-app-title" content="Website Developer and Designer in Mumbai | Dhyey Rathod" />
 				<meta property="og:url" content={information.base_url} />
 				<meta property="og:site_name" content="Dhyey Rathod" />
-				<meta property="article:publisher" content="https://www.facebook.com/dhyey.rathod.98" />
 				<meta property="og:image" content={information.base_url + "assets/images/dhyey.webp"} />
 				<meta property="og:title" content="Website Developer and Designer in Mumbai | Dhyey Rathod" />
 				<meta property="og:description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India. My expertise include web development, mobile app development, ecommerce, SEO and digital marketing." />

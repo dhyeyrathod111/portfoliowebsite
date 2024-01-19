@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
             <div className="agy-copyright-wrapper">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                    <p>Copyright © 2022 <a href="#;">Dhyey Rathod</a>. All Right Reserved.</p>
+                    <p>Copyright © 2022 <Link href="/">Dhyey Rathod</Link>. All Right Reserved.</p>
                 </div>
             </div>
         </footer>
