@@ -4,6 +4,7 @@ import Head from "next/head";
 import Breadcrumb from './components/Breadcrumb'
 import Footer from './components/Footer'
 import { AppContext } from '../controller/context'
+import Whyweare from './components/Whyweare';
 
 const aboutus = ({ information }) => {
     const datacontext = useContext(AppContext);
@@ -93,7 +94,7 @@ const aboutus = ({ information }) => {
                     </div>
                 </div>
             </section>
-            {/* <Whyweare /> */}
+            <Whyweare />
             <Footer />
         </>
     )

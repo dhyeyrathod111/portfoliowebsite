@@ -35,7 +35,7 @@ const Footer = () => {
                                 </div> */}
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-12 mb-30">
                                     <div className="agy-widgets agy-footer-menu">
-                                        <h4 className="agy-sub-heading relative">Links</h4>
+                                        <p className="agy-sub-heading relative">Links</p>
                                         <ul>
                                             <li><Link href="/aboutus">About</Link></li>
                                             <li><Link href="/services">Service</Link></li>
@@ -49,13 +49,13 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
                             <div className="agy-widgets agy-footer-address">
-                                <h4 className="agy-sub-heading relative">Working Hours</h4>
+                                <p className="agy-sub-heading relative">Working Hours</p>
                                 <ul>
                                     <li>Monday - Friday : 9:00 to 17:00</li>
                                     <li>Saturday : 10:00 to 15:00</li>
                                 </ul>
-                                <h6>Call Now -</h6>
-                                <h5>+(91) {information.contact}</h5>
+                                <p>Call Now -</p>
+                                <p>+(91) {information.contact}</p>
                             </div>
                         </div>
                     </div>

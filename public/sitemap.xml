@@ -15,22 +15,27 @@
 <url>
   <loc>https://dhyeyrathod.vercel.app/aboutus/</loc>
   <lastmod>2023-10-24T14:44:12+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.7</priority>
 </url>
 <url>
   <loc>https://dhyeyrathod.vercel.app/services/</loc>
   <lastmod>2023-10-24T14:44:12+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.7</priority>
 </url>
 <url>
   <loc>https://dhyeyrathod.vercel.app/contactus/</loc>
   <lastmod>2023-10-24T14:44:12+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://dhyeyrathod.vercel.app/services/static-website-design-and-development-services-in-mumbai/</loc>
+  <loc>https://dhyeyrathod.vercel.app/services/static-website-development/</loc>
   <lastmod>2023-10-24T14:44:12+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://dhyeyrathod.vercel.app/services/reactjs-development-in-mumbai/</loc>
+  <lastmod>2024-03-17T14:44:12+00:00</lastmod>
+  <priority>0.7</priority>
 </url>
 
 

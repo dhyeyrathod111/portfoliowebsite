@@ -84,4 +84,8 @@ const services = props => {
     )
 }
 
+export const config = {
+    unstable_runtimeJS: false,
+};
+
 export default services

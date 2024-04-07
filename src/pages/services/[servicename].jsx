@@ -9,6 +9,7 @@ import Link from 'next/link';
 
 
 export const getServerSideProps = async (context) => {
+    console.log(context.params.servicename);
     const apidata = await fetch(information.base_url + '/api/serviceapi/' + context.params.servicename)
     const formateddata = await apidata.json();
     return { props: formateddata }
@@ -18,12 +19,11 @@ const Servicedetails = props => {
     const datacontext = useContext(AppContext);
     useEffect(() => {
         datacontext.menuClose()
-        console.log(props.serviceresponse.name);
     }, [])
     return (
         <>
             <Head>
-                <title>{props.serviceresponse.name} | Dhyey Rathod</title>
+                <title>{props.serviceresponse.name + " | Dhyey Rathod"}</title>
                 <meta name="Description" content={props.serviceresponse.meta_description} />
                 <meta name="keywords" content={props.serviceresponse.meta_keywords} />
                 <meta property="og:url" content={information.base_url} />
