@@ -47,7 +47,7 @@ const services = props => {
                         </div>
 
                         {
-                            props.serviceresponse.map((oneservice, index) => {
+                            props.serviceresponse.map(oneservice => {
                                 return (
                                     <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={oneservice._id}>
                                         <div className="agy-service-section" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s' }}>
@@ -63,11 +63,11 @@ const services = props => {
                                                 <img alt="Dhyey Rathod Software Developer IN mumbai" src={information.base_url + "assets/images/services/strategy-research.svg"} />
                                             </div>
                                             <div className="agy-service-text">
-                                                <Link href={information.base_url + "services/" + oneservice.url_slug}>
-                                                    <h4>{oneservice.name}</h4>
+                                                <Link href={information.base_url + oneservice.url_slug}>
+                                                    <h4 style={{ fontSize:"22px", marginBottom: '2px' }}>{oneservice.name}</h4>
                                                 </Link>
                                                 <p>{oneservice.short_description}</p>
-                                                <Link href={information.base_url + "services/" + oneservice.url_slug} className="agy-link">
+                                                <Link href={information.base_url + oneservice.url_slug} className="agy-link">
                                                     <span>Read More</span>
                                                 </Link>
                                             </div>

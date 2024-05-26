@@ -21,12 +21,13 @@ const aboutus = ({ information }) => {
                 <meta property="og:site_name" content="Dhyey Rathod" />
                 <meta property="article:publisher" content="https://www.facebook.com/dhyey.rathod.98" />
 
-                <meta property="og:image" content={information.base_url + "/assets/images/dhyey.webp"} />
+                <meta property="og:image" content={information.base_url + "/assets/images/dhyey_icon.webp"} />
                 <meta property="og:title" content="About Us - Website Developer in Mumbai | Dhyey Rathod" />
                 <meta property="og:description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India. My expertise include web development, mobile app development, ecommerce, SEO and digital marketing." />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
-                <link rel="canonical" href={information.base_url+"aboutus/"} />
+                <link rel="canonical" href={information.base_url + "aboutus/"} />
+                <link rel="icon" type="image/x-icon" href={information.base_url + "assets/images/dhyey_icon.webp"} />
             </Head>
             <Header />
             <Breadcrumb page={"About Us"} />
@@ -60,35 +61,44 @@ const aboutus = ({ information }) => {
                 </div>
             </section>
 
-            <section className="agy-counter-wrapper overflow-hidden">
+            <section className="agy-appointment-wrapper overflow-hidden">
                 <div className="container">
-                    <div className="row counter-holder">
-                        <div className="col-lg-3 col-md-3 col-sm-6 col-12" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s' }}>
-                            <div className="counter-item text-center">
-                                <div className="agy-counter-icon"><img alt='' src={information.base_url + "assets/images/svg/011-rating.svg"} /></div>
-                                <h1><span className="count-no" data-count={26}>26</span><span>k+</span></h1>
-                                <p>Happy Customers</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-3 col-sm-6 col-12" data-wow-delay="0.2s" style={{ visibility: 'visible', animationDelay: '0.2s' }}>
-                            <div className="counter-item text-center">
-                                <div className="agy-counter-icon"><img src={information.base_url + "assets/images/svg/012-start.svg"} /></div>
-                                <h1><span className="count-no" data-count={700}>700</span><span>+</span></h1>
-                                <p>Project Complete</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-3 col-sm-6 col-12" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s' }}>
-                            <div className="counter-item text-center">
-                                <div className="agy-counter-icon"><img src={information.base_url + "assets/images/svg/013-appartment.svg"} /></div>
-                                <h1><span className="count-no" data-count={200}>200</span><span>+</span></h1>
-                                <p>World Wide Branch</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-3 col-sm-6 col-12" data-wow-delay="0.4s" style={{ visibility: 'visible', animationDelay: '0.4s' }}>
-                            <div className="counter-item text-center">
-                                <div className="agy-counter-icon"><img src={information.base_url + "assets/images/svg/014-medal.svg"} /></div>
-                                <h1><span className="count-no" data-count={6}>6</span><span>k+</span></h1>
-                                <p>Award Winner</p>
+                    <div className="row align-items-center">
+                        <div className="col-md-12">
+                            <div className="agy-appointment-form">
+                                <form>
+                                    <h4>Make An Appointment</h4>
+                                    <div className="row">
+                                        <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div className="form-group mb-30">
+                                                <input type="text" placeholder="Name" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div className="form-group mb-30">
+                                                <input type="text" placeholder="Email" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div className="form-group mb-30">
+                                                <input type="text" placeholder="Subject" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div className="form-group mb-30">
+                                                <input type="text" placeholder="Address" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div className="form-group mb-0">
+                                                <textarea placeholder="Work Description That You Want To Do..." defaultValue={""} />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <a href="javascript:void(0);" className="agy-btn white">Submit</a>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

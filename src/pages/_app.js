@@ -4,6 +4,7 @@ import { AppProvider } from '../controller/context'
 import Head from 'next/head'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 export default function App({ Component, pageProps }) {
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }) {
 				<meta property="og:locale" content="en_US" />
 				<meta property="og:type" content="article" />
 			</Head>
+			<GoogleAnalytics gaId="GTM-5LJDQL56" />
 			<Component information={information} {...pageProps} />
 			<SpeedInsights /><Analytics />
 		</AppProvider>

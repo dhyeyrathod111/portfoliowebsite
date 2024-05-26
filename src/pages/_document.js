@@ -4,11 +4,11 @@ export default function Document() {
 	return (
 		<Html lang="en">
 			<Head>
-				<link rel="shortcut icon" type="image/ico" href={information.base_url + "assets/images/favicon.png"} />
+				<link rel="shortcut icon" type="image/ico" href={information.base_url + "assets/images/dhyey_icon.webp"} />
 			</Head>
 			<body>
 				<Main />
-				<NextScript />	
+				<NextScript />
 			</body>
 		</Html>
 	)

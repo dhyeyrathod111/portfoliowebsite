@@ -4,9 +4,7 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+            
 <url>
   <loc>https://dhyeyrathod.vercel.app/</loc>
   <lastmod>2023-10-24T14:44:12+00:00</lastmod>
@@ -28,13 +26,18 @@
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://dhyeyrathod.vercel.app/services/static-website-development/</loc>
+  <loc>https://dhyeyrathod.vercel.app/static-website-development/</loc>
   <lastmod>2023-10-24T14:44:12+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://dhyeyrathod.vercel.app/services/reactjs-development-in-mumbai/</loc>
+  <loc>https://dhyeyrathod.vercel.app/react-js-developer-in-mumbai/</loc>
   <lastmod>2024-03-17T14:44:12+00:00</lastmod>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://dhyeyrathod.vercel.app/next-js-developer-in-mumbai/</loc>
+  <lastmod>2024-05-18T14:44:12+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 

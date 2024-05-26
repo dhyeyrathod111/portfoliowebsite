@@ -1,16 +1,15 @@
 import React, { useEffect, useContext } from 'react';
-import { AppContext } from '../controller/context'
+import { AppContext } from './../controller/context'
 import Header from './components/Header';
 import Head from "next/head";
 import Footer from './components/Footer';
 import Breadcrumb from './components/Breadcrumb';
-import information from '../../information.json'
+import information from './../../information.json'
 import Link from 'next/link';
 
 
 export const getServerSideProps = async (context) => {
-
-    const apidata = await fetch(information.base_url + '/api/serviceapi/reactjs-development-in-mumbai')
+    const apidata = await fetch(information.base_url + '/api/serviceapi/react-js-developer-in-mumbai')
     const formateddata = await apidata.json();
     return { props: formateddata }
 }
@@ -20,11 +19,13 @@ const Servicedetails = props => {
     useEffect(() => {
         datacontext.menuClose()
     }, [])
+    
     return (
         <>
             <Head>
                 <title>{props.serviceresponse.name + " | Dhyey Rathod"}</title>
                 <meta name="Description" content={props.serviceresponse.meta_description} />
+                <meta name="google-site-verification" content="XG1ZPDr2VXJeFKPjcpdyzTFTxcw-jgLX9td7V48dBMI" />
                 <meta name="keywords" content={props.serviceresponse.meta_keywords} />
                 <meta property="og:url" content={information.base_url} />
                 <meta property="og:site_name" content={information.name} />
@@ -33,7 +34,7 @@ const Servicedetails = props => {
                 <meta property="og:description" content={props.serviceresponse.short_description} />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
-                <link rel="canonical" href={information.base_url + "services/" + props.serviceresponse.url_slug + "/"} />
+                <link rel="canonical" href={information.base_url + "/" + props.serviceresponse.url_slug + "/"} />
             </Head>
             <Header />
             <Breadcrumb page={props.serviceresponse.name} />
@@ -50,7 +51,6 @@ const Servicedetails = props => {
                                     <ul>
                                         <li><img className="agy-user" src={information.base_url + "assets/images/dhyey.webp"} alt="Dhyey Rathod" /><span>Post By -</span><a className="agy-user-name" href="/">Dhyey Rathod</a></li>
                                         <li><Link href="/"><i className="fa fa-calendar" />March 9, 2022</Link></li>
-                                        <li><Link href="/"><i className="fa fa-comments-o" />0 Comments</Link></li>
                                     </ul>
                                 </div>
                                 <Link href="/" className="agy-blog-heading text-center" style={{ width: "100%" }}>
