@@ -19,21 +19,21 @@ const Servicedetails = props => {
     useEffect(() => {
         datacontext.menuClose()
     }, [])
-    
+
     return (
         <>
             <Head>
-                <title>{props.serviceresponse.name + " | Dhyey Rathod"}</title>
-                <meta name="Description" content={props.serviceresponse.meta_description} />
-                <meta name="keywords" content={props.serviceresponse.meta_keywords} />
-                <meta property="og:url" content={information.base_url} />
-                <meta property="og:site_name" content={information.name} />
-                <meta property="og:image" content={information.base_url + "assets/images/dhyey.webp"} />
-                <meta property="og:title" content={props.serviceresponse.name} />
-                <meta property="og:description" content={props.serviceresponse.short_description} />
-                <meta property="og:image:width" content="1200" />
-                <meta property="og:image:height" content="630" />
-                <link rel="canonical" href={information.base_url + "services/" + props.serviceresponse.url_slug + "/"} />
+                <title>Static Website Development In Mumbai | Dhyey Rathod</title>
+                <meta name="description" content="Dhyey Rathod is a professional Static Website developer in Mumbai, India." />
+                <meta property="og:url" content="https://dhyeyrathod.vercel.app/static-website-development/" />
+                <meta property="og:site_name" content="Dhyey Rathod" />
+                <meta property="og:image" content={information.base_url + "assets/images/dhyey_icon.webp"} />
+                <meta property="og:title" content="Static Website Development In Mumbai | Dhyey Rathod" />
+                <meta property="og:description" content="Dhyey Rathod is a professional Static Website developer in Mumbai, India." />
+                <meta property="og:image:width" content="500" />
+                <meta property="og:image:height" content="200" />
+                <link rel="canonical" href={information.base_url} />
+                <link rel="icon" type="image/x-icon" href={information.base_url + "assets/images/dhyey_icon.webp"} />
             </Head>
             <Header />
             <Breadcrumb page={props.serviceresponse.name} />

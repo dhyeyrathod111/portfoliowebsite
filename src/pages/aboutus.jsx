@@ -23,7 +23,7 @@ const aboutus = ({ information }) => {
 
                 <meta property="og:image" content={information.base_url + "/assets/images/dhyey_icon.webp"} />
                 <meta property="og:title" content="About Us - Website Developer in Mumbai | Dhyey Rathod" />
-                <meta property="og:description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India. My expertise include web development, mobile app development, ecommerce, SEO and digital marketing." />
+                <meta property="og:description" content="Dhyey Rathod is a web designer and developer based in Mumbai,India." />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <link rel="canonical" href={information.base_url + "aboutus/"} />

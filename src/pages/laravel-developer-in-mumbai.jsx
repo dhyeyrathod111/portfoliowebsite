@@ -9,12 +9,12 @@ import information from '../../information.json'
 import Link from 'next/link';
 
 export const getServerSideProps = async (context) => {
-    const apidata = await fetch(information.base_url + '/api/serviceapi/next-js-developer-in-mumbai')
+    const apidata = await fetch(information.base_url + '/api/serviceapi/laravel-developer-in-mumbai')
     const formateddata = await apidata.json();
     return { props: formateddata }
 }
 
-const nextjs = props => {
+const LaravelDevelopment = props => {
     const datacontext = useContext(AppContext);
     useEffect(() => {
         datacontext.menuClose()
@@ -22,16 +22,15 @@ const nextjs = props => {
     return (
         <>
             <Head>
-                <title>Next JS Developer In Mumbai | Dhyey Rathod</title>
-                <meta name="description" content="Dhyey Rathod is a Next JS Developer in Mumbai Inda providing Next JS development services for creating websites, applications, and mobile Applications." />
-                <meta property="og:url" content="https://dhyeyrathod.vercel.app/next-js-developer-in-mumbai/" />
+                <title>Laravel Developer In Mumbai | Dhyey Rathod</title>
+                <meta name="description" content="Dhyey Rathod is a Laravel Developer in Mumbai India providing Laravel development services for creating websites, Web applications, and mobile Applications." />
+                <meta property="og:url" content="https://dhyeyrathod.vercel.app/laravel-developer-in-mumbai/" />
                 <meta property="og:site_name" content="Dhyey Rathod" />
                 <meta property="og:image" content={information.base_url + "assets/images/dhyey_icon.webp"} />
-                <meta property="og:title" content="Next JS Developer In Mumbai | Dhyey Rathod" />
-                <meta property="og:description" content="Dhyey Rathod is a Next JS Developer in Mumbai Inda providing Next JS development services for creating websites, applications, and mobile Applications." />
-                <meta property="og:image:width" content="500" />
-                <meta property="og:image:height" content="200" />
-                <link rel="canonical" href="https://dhyeyrathod.vercel.app/next-js-developer-in-mumbai/" />
+                <meta property="og:title" content="Laravel Developer In Mumbai | Dhyey Rathod" />
+                <meta property="og:description" content="Dhyey Rathod is a Laravel Developer in Mumbai India providing Laravel development services for creating websites, Web applications, and mobile Applications." />
+                <meta property="og:image:width" content="500" /><meta property="og:image:height" content="200" />
+                <link rel="canonical" href="https://dhyeyrathod.vercel.app/laravel-developer-in-mumbai/" />
                 <link rel="icon" type="image/x-icon" href={information.base_url + "assets/images/dhyey_icon.webp"} />
             </Head>
             <Header />
@@ -48,7 +47,7 @@ const nextjs = props => {
                                     <ul>
                                         <li>
                                             <Link className="agy-user-name" href="/">
-                                                <img className="agy-user" src={information.base_url + "assets/images/dhyey_icon.webp"} alt="Best Next Js Developer In MUmbai - Dhyey Rathod" /><span>Post By - </span>Dhyey Rathod
+                                                <img className="agy-user" src={information.base_url + "assets/images/dhyey_icon.webp"} alt="Laravel Developer In Mumbai - Dhyey Rathod" /><span>Post By - </span>Dhyey Rathod
                                             </Link>
                                         </li>
                                         <li><Link href="/"><i className="fa fa-calendar" />May 18, 2024</Link></li>
@@ -114,4 +113,4 @@ const nextjs = props => {
     )
 }
 
-export default nextjs;
+export default LaravelDevelopment;
